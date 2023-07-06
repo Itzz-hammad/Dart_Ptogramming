@@ -1,12 +1,12 @@
 void main() {
-  List<int> originalList = [2, 5, 3, 2, 8, 5, 1, 9, 4, 2];
-  List<int> uniqueList = [];
+ int pattern= 4;
+  int number = 1;
 
-  for (var number in originalList) {
-    if (!uniqueList.contains(number)) {
-      uniqueList.add(number);
+  for (int i = 1; i <= pattern; i++) {
+    for (int j = 1; j <= i; j++) {
+      print(number);
+      number++;
     }
+    print('');
   }
-
-  print(uniqueList);
 }

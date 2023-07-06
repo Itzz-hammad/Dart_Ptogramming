@@ -1,13 +1,13 @@
 void main() {
-  Map<String, dynamic> product = {
-    'name': 'Widget',
-    'price': 9.99,
-    'quantity': 5,
-  };
+  String input = "Hello, World!";
+  int vowelCount = 0;
 
-  if (product['quantity'] > 0) {
-    print('In stock');
-  } else {
-    print('Out of stock');
+  for (int i = 0; i < input.length; i++) {
+    String char = input[i].toLowerCase();
+    if (char == 'a' || char == 'e' || char == 'i' || char == 'o' || char == 'u') {
+      vowelCount++;
+    }
   }
+
+  print("Number of vowels: $vowelCount");
 }

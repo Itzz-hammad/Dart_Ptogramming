@@ -1,6 +1,14 @@
-void main() {
-  List<int> originalList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-  List<int> evenNumbers = originalList.where((number) => number % 2 == 0).toList();
+void printAsteriskPyramid(int rows) {
+  for (int i = 1; i <= rows; i++) {
+    String row = "";
+    for (int j = 1; j <= i; j++) {
+      row += "* ";
+    }
+    print(row);
+  }
+}
 
-  print(evenNumbers);
+void main() {
+  int numRows = 4;
+  printAsteriskPyramid(numRows);
 }

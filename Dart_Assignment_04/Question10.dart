@@ -1,12 +1,9 @@
 void main() {
-  List<String> originalList = ['apple', 'banana', 'cherry', 'apple', 'date', 'banana', 'apple'];
-  List<String> uniqueList = [];
-
-  for (var element in originalList) {
-    if (!uniqueList.contains(element)) {
-      uniqueList.add(element);
+ int pattern = 4;
+  for (int i = 1; i <= pattern; i++) {
+    for (int j = 1; j <= i; j++) {
+      print('*');
     }
+    print('');
   }
-
-  print(uniqueList);
 }

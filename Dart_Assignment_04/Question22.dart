@@ -1,14 +1,12 @@
 void main() {
-  Map<String, int> shoppingCart = {
-    'Apple': 3,
-    'Banana': 2,
-    'Orange': 4,
-    'Mango': 1,
-  };
+  List<int> numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+  int sumOfSquares = 0;
 
-  if (shoppingCart.containsKey('Apple')) {
-    print('Product found');
-  } else {
-    print('Product not found');
+  for (int number in numbers) {
+    if (number % 2 != 0) {
+      sumOfSquares += number * number;
+    }
   }
+
+  print("Sum of squares of odd numbers: $sumOfSquares");
 }

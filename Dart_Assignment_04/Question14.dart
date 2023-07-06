@@ -1,7 +1,13 @@
 void main() {
-  List<int> originalList = [5, 2, 8, 1, 9, 4];
-  List<int> sortedList = List.from(originalList); 
-  sortedList.sort(); 
 
-  print(sortedList);
+int pattern = 4;
+  int number = 1;
+
+  for (int i = 1; i <= pattern; i++) {
+    for (int j = 1; j <= i; j++) {
+      print(number);
+      number++;
+    }
+    print('');
+  }
 }
